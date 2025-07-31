@@ -1,0 +1,23 @@
+[
+    {
+        "key": "accessToken",
+        "type": "input",
+        "defaultValue": "",
+        "templateOptions": {
+            "label": "access token",
+            "type": "password",
+            "placeholder": "Please enter a access token",
+            "required": true
+        }
+    },
+    {
+        "key": "BaseUrl",
+        "type": "input",
+        "defaultValue": "",
+        "templateOptions": {
+            "label": "BaseUrl",
+            "description": "The URL to the API.",
+            "required": true
+        }
+    }
+]
