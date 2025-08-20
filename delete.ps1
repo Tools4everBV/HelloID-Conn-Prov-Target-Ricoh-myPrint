@@ -106,6 +106,7 @@ try {
     # Process
     switch ($action) {
         'DeleteAccount' {
+            # Cast forceDeleteEnabled to int to get the necessary 0 and 1 values
             $deleteBody = "<soapenv:Envelope xmlns:soapenv=`"http://schemas.xmlsoap.org/soap/envelope/`" xmlns:tem=`"http://tempuri.org/`" xmlns:ric=`"http://schemas.datacontract.org/2004/07/RicohKC.MyPrint.ConnectService`" xmlns:ric1=`"http://schemas.datacontract.org/2004/07/RicohKC.MyPrint.ConnectService.Accounts`">
     <soapenv:Header/>
     <soapenv:Body>
@@ -113,7 +114,7 @@ try {
             <tem:DeleteAccountRequest>
                 <ric:Identifier>$($actionContext.References.Account)</ric:Identifier>
                 <ric:SecurityToken>$($actionContext.Configuration.accessToken)</ric:SecurityToken>
-                <ric1:ForceDelete>0</ric1:ForceDelete>
+                <ric1:ForceDelete>$([int]$actionContext.Configuration.forceDeleteEnabled)</ric1:ForceDelete>
             </tem:DeleteAccountRequest>
         </tem:DeleteAccount>
     </soapenv:Body>

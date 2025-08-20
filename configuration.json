@@ -19,5 +19,15 @@
             "description": "The URL to the API.",
             "required": true
         }
+    },
+    {
+    "key": "forceDeleteEnabled",
+    "type": "checkbox",
+    "defaultValue": false,
+    "templateOptions": {
+      "label": "Force delete toggle",
+      "description": "Sets the force delete property to 0 or 1 in the delete action",
+      "required": false
     }
+  }
 ]
