@@ -17,17 +17,18 @@
         "templateOptions": {
             "label": "BaseUrl",
             "description": "The URL to the API.",
+            "placeholder": "For example: https://myprint.[company].nl",
             "required": true
         }
     },
     {
-    "key": "forceDeleteEnabled",
-    "type": "checkbox",
-    "defaultValue": false,
-    "templateOptions": {
-      "label": "Force delete toggle",
-      "description": "Sets the force delete property to 0 or 1 in the delete action",
-      "required": false
+        "key": "forceDeleteEnabled",
+        "type": "checkbox",
+        "defaultValue": false,
+        "templateOptions": {
+            "label": "Force delete toggle",
+            "description": "Sets the force delete property to 0 or 1 in the delete action",
+            "required": false
+        }
     }
-  }
 ]

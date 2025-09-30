@@ -4,7 +4,7 @@
 > This repository contains the connector and configuration code only. The implementer is responsible to acquire the connection details such as username, password, certificate, etc. You might even need to sign a contract or agreement with the supplier before implementing this connector. Please contact the client's application manager to coordinate the connector requirements.
 
 <p align="center">
-  <img src="">
+  <img src="https://github.com/Tools4everBV/HelloID-Conn-Prov-Target-Ricoh-myPrint/blob/main/Logo.png?raw=true">
 </p>
 
 ## Table of contents
@@ -54,6 +54,8 @@ The following features are available:
 
 - **IP Whitelisting**:<br>
   The IP addresses used by the connector must be whitelisted on the target system's firewall to allow access. Ensure that the firewall rules are configured to permit incoming and outgoing connections from these IPs.
+- **Accounts in myPrint**:<br>
+  The user account in myPrint is provisioned JIT by myPrint only when the user authenticates in myPrint the very first time. 
 
 ### Connection settings
 
